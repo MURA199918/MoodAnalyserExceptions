@@ -11,6 +11,8 @@ public class MoodAnalyser {
     }
     public String analyseMood() throws MoodAnalyserException {
         try {
+            if(message.length()==0)
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_EMPTY,"Please enter valid message");
             if (message.contains(("sad"))) {
                 return "SAD";
             } else {
@@ -18,7 +20,7 @@ public class MoodAnalyser {
             }
         } catch (NullPointerException e){
 
-            throw new MoodAnalyserException("Please enter valid message");
+            throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_NULL,"Please enter valid message");
 
         }
     }

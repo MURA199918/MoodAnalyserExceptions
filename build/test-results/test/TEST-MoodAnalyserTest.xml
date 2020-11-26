@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-26T09:42:20" hostname="DESKTOP-J9DM2GE" time="0.001">
+<testsuite name="MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-26T10:14:48" hostname="DESKTOP-J9DM2GE" time="0.009">
   <properties/>
-  <testcase name="givennullmoodreturnexception" classname="MoodAnalyserTest" time="0.001"/>
+  <testcase name="givennullmoodreturnexception" classname="MoodAnalyserTest" time="0.009"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
