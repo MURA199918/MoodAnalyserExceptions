@@ -25,8 +25,8 @@ public class MoodAnalyserTest {
         String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("HAPPY",mood);
     }
-    /*@Test
-    public void givennullmoodreturnhappy1(){
+    @Test
+    public void givennullmoodreturnhappy1() {
         MoodAnalyser moodAnalyser =new MoodAnalyser(null);
         String mood=null;
         try{
@@ -38,5 +38,5 @@ public class MoodAnalyserTest {
             e.printStackTrace();
         }
        // Assert.assertEquals("Happy",mood);
-    }*/
+    }
 }
