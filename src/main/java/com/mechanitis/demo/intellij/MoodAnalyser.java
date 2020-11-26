@@ -1,7 +1,7 @@
 package com.mechanitis.demo.intellij;
 
 public class MoodAnalyser {
-    /*String message;
+    String message;
     public MoodAnalyser(String message){
         this.message=message;
     }
@@ -17,15 +17,9 @@ public class MoodAnalyser {
                 return "HAPPY";
             }
         } catch (NullPointerException e){
-            throw new MoodAnalyserException("Please enter valid message");
-
-        }
-    }*/
-    public String analyseMood(String message){
-        if (message.contains(("sad"))) {
-            return "SAD";
-        } else {
             return "HAPPY";
+            //throw new MoodAnalyserException("Please enter valid message");
+
         }
     }
 }

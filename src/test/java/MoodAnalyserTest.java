@@ -9,23 +9,23 @@ public class MoodAnalyserTest {
 
     @Test
     public void testMoodAnalysis() throws Exception{
-        MoodAnalyser moodAnalyser = new MoodAnalyser();
-        String mood=moodAnalyser.analyseMood("Sad message");
+        MoodAnalyser moodAnalyser = new MoodAnalyser("SAD");
+        String mood=moodAnalyser.analyseMood();
         Assert.assertThat(mood, CoreMatchers.is("SAD"));
     }
     @Test
     public void testMoodAnalysis1() throws Exception{
-        MoodAnalyser moodAnalyser = new MoodAnalyser();
-        String mood = moodAnalyser.analyseMood("Happy message");
+        MoodAnalyser moodAnalyser = new MoodAnalyser("HAPPY");
+        String mood = moodAnalyser.analyseMood();
         Assert.assertThat(mood, CoreMatchers.is("HAPPY"));
     }
-    /*@Test
+    @Test
     public void givenNullMoodreturnHappy() throws MoodAnalyserException {
         MoodAnalyser moodAnalyser=new MoodAnalyser(null);
         String mood=moodAnalyser.analyseMood();
         Assert.assertEquals("HAPPY",mood);
     }
-    @Test
+    /*@Test
     public void givennullmoodreturnhappy1(){
         MoodAnalyser moodAnalyser =new MoodAnalyser(null);
         String mood=null;
