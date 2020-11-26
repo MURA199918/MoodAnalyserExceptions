@@ -39,4 +39,13 @@ public class MoodAnalyserTest {
         }
        // Assert.assertEquals("Happy",mood);
     }
+    @Test
+    public void givennullmoodreturnexception(){
+        MoodAnalyser moodAnalyser=new MoodAnalyser(null);
+        try{
+            moodAnalyser.analyseMood(null);
+        }catch (MoodAnalyserException e){
+            Assert.assertEquals("Please enter valid message",e.getMessage());
+        }
+    }
 }
